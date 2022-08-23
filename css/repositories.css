@@ -1,0 +1,59 @@
+#repos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.repositories-container {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: left;
+    gap: 10px;
+}
+
+.repository {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+    gap: 5px;
+    border: 1px solid white;
+}
+
+.repository span {
+    width: 100%;
+    text-align:left;
+}
+
+.description {
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+}
+
+.repository a {
+    color: var(--complementary-color);
+}
+
+@media screen and (max-width:600px){
+
+    .repository {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .repository span {
+        text-align: center;
+    }
+
+    .repository a {
+        font-size: 25px;
+    }
+}

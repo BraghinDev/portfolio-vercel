@@ -1,0 +1,13 @@
+@import url('./posts.css');
+@import url('./styles.css');
+@import url('./repositories.css');
+@import url('./college.css');
+@import url('./footer.css');
+
+* {
+    --bg-color: #000;
+    --fg-color: #fff;
+    --shadow-color: #fff;
+    --complementary-color: #008F11;
+    --complementary-color-darkest: #014d0a;
+}

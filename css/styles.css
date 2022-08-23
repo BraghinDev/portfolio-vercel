@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0px 80px;
+    box-shadow: 0px 0px 0.7px var(--shadow-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--complementary-color);
+    transition: all .2s;
+}
+
+.logo:hover {
+    color: var(--fg-color);
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.color-span {
+    color: var(--complementary-color);
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.navigation a {
+    color: var(--fg-color);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.navigation a:hover {
+    color: var(--complementary-color);
+}
+
+.main {
+    display: flex;
+    padding: 80px 30px 0px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-me h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-me p {
+    width: 100%;
+    display: inline;
+    font-size: 20px;
+}
+
+.me-img {
+    padding: 20px 0;
+}
+
+.me-img img{
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.description {
+    text-align: center;
+}
+
+.technologies-button, .button {
+    background: var(--fg-color);
+    padding: 15px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--complementary-color) 50%, var(--complementary-color-darkest) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+    color: var(--fg-color);
+}
+
+.technologies-button:hover, .button:hover {
+    background-position: left bottom;
+}
+
+.container {
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#technologies {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px 0;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+#technologies h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 100px;    
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.card-one .language-icon, .card-one .color-span {
+    color:  #e34c26;    
+}
+
+.card-two .language-icon, .card-two .color-span {
+    color:  #264de4;    
+}
+
+.card-three .language-icon, .card-three .color-span {
+    color:  #F0DB4F;    
+}
+
+.card-four .language-icon, .card-four .color-span {
+    color:  #659AD2;    
+}
+
+.card-five .language-icon, .card-five .color-span {
+    color:  #f89820;    
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.card p, .obs {
+    width: 100%;
+    text-align: center;
+}
+
+.language-icon {
+    font-size: 50px
+}
+
+#projects {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+#projects h2 {
+    font-size: 20px;
+}
+
+.projects-title-container {
+    width: 100%;
+    max-width: 70%;
+    display: flex;
+    background: var(--complementary-color);
+    color: var(--fg-color);
+    text-align: left;
+    padding: 20px 10px;
+}
+
+#dev-projects h2 {
+    font-size: 20px;
+}
+
+@media screen and (max-width:600px){
+
+    header {
+        padding: 0px 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+    .navigation {
+        justify-content: center;
+    }
+
+    .links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .me-img img{
+        border-radius: 50%;
+        max-width: 200px;
+        max-height: 200px;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Braghin">
+    <meta name="description" content="Potfólio do desenvolvedor front-end/back-end Pedro Braghin">
+    <meta name="keywords" content="portfolio, html, css, javascript, nodejs, front-end, back-end, desenvolvedor">
+
+    <title>Portfólio | Pedro Braghin</title>
+
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/e6f1177151.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <span>&lt;PB/&gt;</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="https://github.com/BraghinDev" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pedro-braghin/" target="_blank">Linkedin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+        <div class="main">
+            <section class="about-me">
+                <h1>
+                    Olá, sou o
+                    <span class="color-span">
+                        Pedro Braghin
+                    </span>
+                </h1>
+                <div class="me-img">
+                    <img src="../img/me.jpg" alt="foto de Pedro Braghin">
+                </div>
+                <p class="description">
+                    <span class="color-span">
+                        Estudante de Front-end
+                    </span>  
+                    e estudante universitário
+                </p>
+                <button class="know-me-button button" onclick="scrollToSection()">Coheça-me!</button>
+            </section>
+
+            <section id="technologies">
+                <h2>
+                    Conhecimento nas seguintes
+                     <span class="color-span">tecnologias</span>
+                    </h2>
+                <div class="container">
+                    <div class="card-one card">
+                        <i class="fa-brands fa-html5 language-icon"></i>
+                        <p>Conhecimento em <span class="color-span">HTML</span> utilizando tags semânticas</p>
+                    </div>
+                    <div class="card-two card">
+                        <i class="fa-brands fa-css3-alt language-icon"></i>
+                        <p>Conhecimento em <span class="color-span">CSS</span> utilizando flexbox layout</p>
+                    </div>
+                    <div class="card-three card">
+                        <i class="fa-brands fa-js-square language-icon"></i>
+                        <p>Conhecimento da sintaxe básica do <span class="color-span">JavaScript</span></p>
+                    </div>
+                    <div class="card-four card">
+                        <i class="fa-solid fa-c language-icon"></i>
+                        <p>Conhecimento em alocação dinâmica de memória e TADs em <span class="color-span">C</span></p>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="card-five card">
+                        <i class="fa-brands fa-java language-icon"></i>
+                        <p>Conhecimento de POO e multithread em <span class="color-span">Java</span></p>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="obs">
+                    <i class="fa-regular fa-star"></i>
+                    <span>linguagens com maior conhecimento e afinidade</span>
+                </div>
+                <div>
+                    <button type="button" class="button button-projects" onclick="scrollToProjects()">Projetos</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <section id="projects">
+        <div class="projects-title-container">
+            <h2>Projetos</h2>
+        </div>
+        <!-- DEV PROJECTS -->
+        <section id="dev-projects">
+            <h2>Projetos de 
+                <span class="color-span">
+                    Desenvolvimento
+                </span>
+            </h2>
+        </section>
+
+        <section id="repos">
+            <div class="repositories-container">Container</div>
+        </section>
+
+        <!-- OTHER PROJECTS -->
+        <section class="other-skills">
+            <h3>
+                Trabalhos de 
+                <span class="color-span">
+                Design Gráfico
+                </span>
+            </h3>
+            <small><i>(projetos desenvolvidos com outras pessoas)</i></small>
+            <p>
+                <small>(clique na imagem para visitar o post no Instagram)</small>
+            </p>
+            <div id="instagram-feed"></div>
+        </section>
+    </section>
+
+    <!-- COLLEGE -->
+    <section id="college">
+        <h2>Formação acadêmica</h2>
+        <div>
+            <ul>
+                <li>
+                    Sistemas de Informação - Bacharelado (Cursando)
+                    <details>
+                        Universidade Federal de Mato Grosso do Sul (UFMS)
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="https://github.com/BraghinDev" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pedro-braghin/" target="_blank">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+        <div class="scroll-to-top">
+            <a href="#main"><i class="fa-solid fa-square-caret-up"></i></a>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/loadPosts.js"></script>
+    <script src="../js/repositories-github.js"></script>
+</body>
+</html>

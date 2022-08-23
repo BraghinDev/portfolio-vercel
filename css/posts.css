@@ -1,0 +1,55 @@
+.other-skills {
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 1200px;
+}
+
+.other-skills h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.other-skills small {
+    text-align: center;
+}
+
+.other-skills p {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#instagram-feed {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.instagram-post {
+    max-width: 300px;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+.instagram-post img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    opacity: 50%;
+    transition: all .2s;
+}
+
+.instagram-post img:hover {
+    opacity: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .other-skills {
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,37 @@
+#college {
+    margin-top: 100px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 20px;
+}
+
+#college h2 {
+    color: var(--complementary-color);
+    font-size: 30px;
+}
+
+#college ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) { 
+
+    #college {
+        text-align: center;
+    }
+
+    #college h2 {
+        font-size: 25px;
+    }
+
+    #college ul {
+        font-size: 15px;
+    }
+
+}
